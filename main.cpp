@@ -304,7 +304,7 @@ Objective defineObjective2(fira_message::sim_to_ref::Robot robot, fira_message::
     if (robot.x() > 135){  // Deixa o robô longe do próprio gol
       x = 135;}
     
-    if (DistanciaBola > 45 && ball.y() < 85 && ball.y() > 50 && ball.x() < robot.x() - 20){ //Aliando o robo com a bola
+    if (DistanciaBola > 25 && ball.y() < 85 && ball.y() > 50 && ball.x() < robot.x() - 20){ //Aliando o robo com a bola
       return Objective(robot.x() - 10, ball.y(), ang);
     }
     
@@ -374,7 +374,7 @@ Objective defineObjective4(fira_message::sim_to_ref::Robot robot, fira_message::
       x = 35;
     }
 
-    if (DistanciaBola > 45 && ball.y() < 85 && ball.y() > 50 && ball.x() > robot.x() - 20){ //Aliando o robo com a bola
+    if (DistanciaBola > 25 && ball.y() < 85 && ball.y() > 50 && ball.x() > robot.x() - 20){ //Aliando o robo com a bola
       return Objective(robot.x() + 10, ball.y(), ang);
     }
     ang = M_PI/2;
