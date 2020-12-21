@@ -238,8 +238,7 @@ Objective defineObjective5(fira_message::sim_to_ref::Robot robot, fira_message::
     //Deve retornar o objetivo do robô
     printf("BIGODEEEEEEEEEEEEEEEEEEEE %f %f\n\n", robot.x(), robot.y());
 
-    // Calcular a distancia da bola
-    double DistanciaBola = sqrt( pow( robot.x() - ball.x(),2) + pow(robot.y() - ball.y(),2) );
+    double DistanciaBola = sqrt( pow( robot.x() - ball.x(),2) + pow(robot.y() - ball.y(),2) );// Calcular a distancia da bola
     double defender_x = 125;   // X da linha de defesa
     
 
